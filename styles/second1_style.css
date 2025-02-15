@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include this line to ensure accurate box sizing */
+    font-family: sans-serif;
+}
+/*
+body{
+
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+*/
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/PIC14.jpg);
+    background-size:cover;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    color: #fff;
+    text-align: center; /* Center text content in the banner */
+    /* display: flex; */
+    /*flex-direction: column;*/
+    position: fixed;
+    justify-content: center;
+}
+
+.navbar{
+width: 85%;
+margin: auto;
+padding: 35px 0;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+}
+.navbar ul li {
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+    position: relative;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    /* text-transform: uppercase; */
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden;
+}
+/*
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+*/

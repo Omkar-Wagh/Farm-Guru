@@ -1,0 +1,178 @@
+/* Basic styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.Button {
+  max-width:max-content;
+  padding: 1rem;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 1px solid #007bff;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+/* Header styles */
+.header {
+  background-color: #007bff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.header .navbar ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header .navbar ul li a:hover {
+  color: yellow;
+}
+
+.header .navbar ul li a.active {
+  color: yellow;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  padding: 60px 0;
+  text-align: center;
+  color:#fff;
+  background: rgba(0, 0, 0, 0.5) url('') center/cover;
+}
+
+.breadcrumbs h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs ol {
+  font-size: 21px;
+}
+
+.breadcrumbs ol li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Tabs */
+.nav-tabs {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 12px 25px;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-content {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-pane h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tab-pane p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Image styling */
+.tab-pane img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+
+  .header .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcrumbs h2 {
+    font-size: 28px;
+  }
+
+  .breadcrumbs ol {
+    font-size: 16px;
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+
+  .tab-pane h3 {
+    font-size: 20px;
+  }
+
+  .tab-pane p {
+    font-size: 14px;
+  }
+}
